@@ -1,0 +1,119 @@
+:root{
+    --clr-dark: #070a13;
+    --clr-light: #ffffff;
+    --clr-grey: #f3f4f6;
+    --clr-blue: #0365fa;
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem
+}
+
+*{
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+/* .light-mode{} */
+
+body{
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    position: relative;
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button{
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+strong{
+    color: var(--clr-blue);
+}
+
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-blue);
+    outline: 1px solid var(--clr-blue);
+}
+
+/* Back to top */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 100;
+  }
+  
+  #back-to-top:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-light);
+  }
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div>
+      <header class="header container">
+        <nav class="header__nav">
+          <a class="header__links header__title" href="#">
+            MobileStore
+          </a>
+          <div class=" header__menu">
+            <input placeholder="Search for mobiles..." type="search">
+            <a class="header__links contactusform" href="#">
+              Contact Us
+            </a>
+            <a class="header__links" href="#catalog">
+              Catalog
+            </a>
+            <a class="header__icon" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>              
+            </a>
+          </div>
+        </nav>
+      </header>
+      <div class="contactus__form">
+        <span class="contactus__icon-close">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="contactus__form-box">
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button class="contactus_btn btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <main class="main container">
+        <section class="hero container section">
+          <h1 class="hero__title">
+            Welcome to MobileStore
+          </h1>
+          <p class="hero__description">
+            Discover the latest mobile phones from top brands at affordable prices.
+          </p>
+          <button class="hero__btn btn" href="/shop">
+            Shop Now
+          </button>
+        </section>
+        <section id="catalog" class="catalog container section">
+          <h2 class="catalog__title">Our Catalog</h2>
+          <div class="catalog__container">
+            <!-- mobile1 -->
+            <div class="catalog__img_wrapper catalog__img1">
+              <img src="image1.jpg" alt="Mobile 1">
+            </div>
+            <div class="catalog__content1 content__wrap">
+              <h3 class="catalog__content_title">Apple iPhone 15 Pro Max</h3>
+              <p class="catalog__content_description">
+                128GB, Blue
+              </p>
+              <h4 class="catalog__price">$1,099.00</h4>
+              <button class="btn" href="/product/1">
+                Add to Cart
+              </button>
+            </div>
+            <!-- mobile2 -->
+            <div class="catalog__img_wrapper catalog__img2">
+              <img src="image2.jpg" alt="Mobile 2">
+            </div>
+            <div class="catalog__content2 content__wrap">
+              <h3 class="catalog__content_title">Samsung Galaxy S23 Ultra</h3>
+              <p class="catalog__content_description">
+                256GB, Black
+              </p>
+              <h4 class="catalog__price">$1,199.00</h4>
+              <button class="btn" href="/product/2">
+                Add to Cart
+              </button>
+            </div>
+            <!-- mobile3 -->
+            <div class="catalog__img_wrapper catalog__img3">
+              <img src="image3.jpg" alt="Mobile 3">
+            </div>
+            <div class="catalog__content3 content__wrap">
+              <h3 class="catalog__content_title">Google Pixel 8 Pro</h3>
+              <p class="catalog__content_description">
+                128GB, Sorta Sunny
+              </p>
+              <h4 class="catalog__price">$899.00</h4>
+              <button class="btn" href="/product/3">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer container section">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Wall Charger</a></li>
+                <li><a href="#">Phone Cases & Protectors</a></li>
+                <li><a href="#">TWS & Headphones</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        <p class="footer__rights">
+          ©  MobileStore. All rights reserved.
+        </p>
+    </footer>   
+    </div>
+    <!-- back-to-top -->
+    <div>
+      <a id="back-to-top" href="#" role="button" title="Back to Top">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+          </svg>          
+      </a>
+    </div>
+    
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
