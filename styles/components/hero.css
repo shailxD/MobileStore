@@ -9,7 +9,7 @@
 }
 
 .hero__title{
-    font-size: var(--size-4xl);
+    font-size: var(--size-7xl);
     text-transform: uppercase;
     color: var(--clr-dark);
     letter-spacing: -0.05em;
